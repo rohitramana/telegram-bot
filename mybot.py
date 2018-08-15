@@ -16,6 +16,7 @@ class BotHandler:
 
 	def get_last_update(self):
 		get_result = self.get_updates()
+		print("Length of get_result {}".format(len(get_result)))
 		if len(get_result) > 0:
 			last_update = get_result[-1]
 		else:
@@ -72,6 +73,7 @@ def main():
 
 		new_offset = last_update_id + 1
 		print(new_offset)
+		print("")
 
 if __name__ == '__main__':
 	try:
